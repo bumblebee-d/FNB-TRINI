@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #6200ea;
+  --accent-color: #03dac6;
+  --bg-color: #f9f9f9;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --border-radius: 12px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #3700b3;
+}
+
+.contact-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.contact-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.card-actions button:first-child {
+  background: var(--accent-color);
+  color: #000;
+}
+
+.card-actions button:last-child {
+  background: #e53935;
+  color: #fff;
+}
+
+.card-actions button:hover {
+  opacity: 0.9;
+}
+
+#addContactSection {
+  margin-top: 2rem;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+#addContactSection h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+#addContactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#addContactForm input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+#addContactForm button {
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#addContactForm button:hover {
+  background: #3700b3;
+}

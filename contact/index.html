@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>📒 Contact Book</h1>
+      <button id="refreshBtn">🔄 Refresh</button>
+    </header>
+    <main id="contactList">
+      <!-- Contacts will load here -->
+    </main>
+    <section id="addContactSection">
+      <h2>Add New Contact</h2>
+      <form id="addContactForm">
+        <input type="text" id="nameInput" placeholder="Name" required />
+        <input type="email" id="emailInput" placeholder="Email" required />
+        <input type="text" id="phoneInput" placeholder="Phone" required />
+        <button type="submit">➕ Add Contact</button>
+      </form>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
